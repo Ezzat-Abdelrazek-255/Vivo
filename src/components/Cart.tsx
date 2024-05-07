@@ -31,7 +31,7 @@ const Cart = () => {
         )}
         <ShoppingCart />
       </SheetTrigger>
-      <SheetContent className="overflow-scroll">
+      <SheetContent className="overflow-y-scroll">
         <SheetHeader>
           <SheetTitle>Cart</SheetTitle>
           <SheetDescription>
