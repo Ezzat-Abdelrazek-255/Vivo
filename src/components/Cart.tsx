@@ -11,6 +11,8 @@ import {
 } from "./ui/sheet";
 import { useShop } from "./providers/ShopProvider";
 import CartItem from "./CartItem";
+import { Button } from "./ui/button";
+import Link from "next/link";
 
 const Cart = () => {
   const shop = useShop();
@@ -43,6 +45,13 @@ const Cart = () => {
             <CartItem key={item.id} item={item} />
           ))}
         </ul>
+        {shop.state.cart.length > 0 && (
+          <Button className="w-full" asChild>
+            <Link href="/checkout" onClick={() => shop.closeCart()}>
+              Checkout
+            </Link>
+          </Button>
+        )}
       </SheetContent>
     </Sheet>
   );
