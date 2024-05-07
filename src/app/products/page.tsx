@@ -11,7 +11,9 @@ const Products = () => {
 
   useEffect(() => {
     const fetchProducts = async () => {
-      const res = await fetch(`https://dummyjson.com/products?q=${search}`);
+      const res = await fetch(
+        `https://dummyjson.com/products/search?q=${search}`
+      );
       const data = await res.json();
       setProducts(data.products);
     };
