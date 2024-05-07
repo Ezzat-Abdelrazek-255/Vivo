@@ -5,7 +5,7 @@ import { useSearchParams } from "next/navigation";
 import ProductCard from "@/components/ProductCard";
 
 const Products = () => {
-  const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState<Product[]>([]);
   const searchParams = useSearchParams();
   const search = searchParams.get("q");
 

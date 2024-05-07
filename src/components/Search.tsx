@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 const Search = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [debouncedTerm, setDebouncedTerm] = useState("");
-  const [searchResults, setSearchResults] = useState([]);
+  const [searchResults, setSearchResults] = useState<Product[]>([]);
 
   const router = useRouter();
 
