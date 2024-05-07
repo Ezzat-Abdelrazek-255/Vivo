@@ -10,6 +10,8 @@ const PromoCodeSection = () => {
         alt="An Image of an Iphone Max Headphone with a yellow background"
         width={2000}
         height={2000}
+        placeholder="blur"
+        blurDataURL="/images/compressed/promo-code.jpg"
       />
     </section>
   );

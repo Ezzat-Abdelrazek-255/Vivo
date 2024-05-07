@@ -11,6 +11,8 @@ const HeroSection = () => {
           alt="A Collection of Nike Products"
           width={2000}
           height={2000}
+          placeholder="blur"
+          blurDataURL="/images/compressed/hero-1.jpg"
           priority
         />
       </div>
@@ -20,6 +22,8 @@ const HeroSection = () => {
           src="/images/hero-2.jpg"
           alt="A teal blue plastic shaker cup"
           width={1000}
+          placeholder="blur"
+          blurDataURL="/images/compressed/hero-2.jpg"
           height={1000}
         />
       </div>
@@ -28,6 +32,8 @@ const HeroSection = () => {
           className="object-cover w-full h-full"
           src="/images/hero-3.jpg"
           alt="A Airpods tossed into the air"
+          placeholder="blur"
+          blurDataURL="/images/compressed/hero-3.jpg"
           width={1000}
           height={1000}
         />
