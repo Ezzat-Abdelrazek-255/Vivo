@@ -55,9 +55,6 @@ const Header = async () => {
         </nav> */}
         <SearchInput />
         <div className="flex gap-4">
-          <button aria-label="Search">
-            <Search />
-          </button>
           <Cart />
         </div>
       </div>
