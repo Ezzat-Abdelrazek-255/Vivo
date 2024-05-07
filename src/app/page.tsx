@@ -1,7 +1,19 @@
-import Image from "next/image";
+import Header from "@/components/Header";
+import React from "react";
+import HeroSection from "../components/HeroSection";
+import FeaturedProducts from "../components/FeaturedProducts";
+import PromoCodeSection from "../components/PromoCodeSection";
+import WeeklyTopSelling from "../components/WeeklyTopSelling";
 
-export default function Home() {
+const LandingPage = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24"></main>
+    <main className="flex flex-col gap-32">
+      <HeroSection />
+      <FeaturedProducts />
+      <PromoCodeSection />
+      <WeeklyTopSelling />
+    </main>
   );
-}
+};
+
+export default LandingPage;
